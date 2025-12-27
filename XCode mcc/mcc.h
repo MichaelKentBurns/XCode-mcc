@@ -1,5 +1,5 @@
-#define MCCVERSIONSTRING  "0.91"
-#define MCCVERSIONLONG  " version 0.91"
+#define MCCVERSIONSTRING  "0.92"
+#define MCCVERSIONLONG  " version 0.92"
 #define DEBUG 1
 /*-------------------------------------------------------------------*/
 /* Copyright (c) 1986 by SAS Institute, Inc. Austin, Texas.          */
@@ -326,31 +326,34 @@ typedef struct LENT
 /* mcc macros */
 /*-------------------------------------------------------------------*/
                         
-#define MCCERRF mccerrf 
-#define MCCLISTF  mcclistf 
-#define MCCSRCF   stdin
-#define MCCWRITE  mccwrite              
-#define MCCERR(code) { MCCWRITE(MCCERRF,mccerrfmt,3,mccerrmsg[code],"",""); mccerrcount++; }
-#define MCCERR1(code,one) { MCCWRITE(MCCERRF,mccerrfmt,3,mccerrmsg[code],one,""); mccerrcount++; }
-#define MCCERR2(code,one,two) { MCCWRITE(MCCERRF,mccerrfmt,3,mccerrmsg[code],one,two); mccerrcount++; }
-#define MCCWARN(code)  { MCCWRITE(MCCERRF,mccwarnfmt,mccerrmsg[code],3,"","");  mccwarningcount++; }
-#define MCCWARN1(code,one)  { MCCWRITE(MCCERRF,mccwarnfmt,3,mccerrmsg[code],one,"");  mccwarningcount++; }
+#define MCCERRF                 mccerrf
+#define MCCLISTF                mcclistf
+#define MCCSRCF                 stdin
+#define MCCWRITE                mccwrite
+#define MCCWRITETYPES           mccwriteTypes
+#define MCCERR(code)            { MCCWRITE(MCCERRF,mccerrfmt,3,mccerrmsg[code],"",""); mccerrcount++; }
+#define MCCERR1(code,one)       { MCCWRITE(MCCERRF,mccerrfmt,3,mccerrmsg[code],one,""); mccerrcount++; }
+#define MCCERR2(code,one,two)   { MCCWRITE(MCCERRF,mccerrfmt,3,mccerrmsg[code],one,two); mccerrcount++; }
+#define MCCWARN(code)           { MCCWRITE(MCCERRF,mccwarnfmt,mccerrmsg[code],3,"","");  mccwarningcount++; }
+#define MCCWARN1(code,one)      { MCCWRITE(MCCERRF,mccwarnfmt,3,mccerrmsg[code],one,"");  mccwarningcount++; }
 #define MCCWARN2(code,one,two)  { MCCWRITE(MCCERRF,mccwarnfmt,3,mccerrmsg[code],one,two);  mccwarningcount++; }
-#define MCCABORT(code) { MCCWRITE(MCCERRF,mccabortfmt,3,mccerrmsg[code],__LINE__,__FILE__); abort(); }
-#define MCCRETURN(code,val) { MCCWRITE(MCCERRF,mccabortfmt,3,mccerrmsg[code],__LINE__,__FILE__); return(val); }
+#define MCCABORT(code)          { MCCWRITE(MCCERRF,mccabortfmt,3,mccerrmsg[code],__LINE__,__FILE__); abort(); }
+#define MCCRETURN(code,val)     { MCCWRITE(MCCERRF,mccabortfmt,3,mccerrmsg[code],__LINE__,__FILE__); return(val); }
 #if DEBUG
-#   define MCCTRC(str)     { MCCWRITE(MCCLISTF,mcctrcfmt,3,str,__LINE__,__FILE__); }  
-#   define MCCTRCd(str,n)  { MCCWRITE(MCCLISTF,mcctrcdfmt,4,str,n,__LINE__,__FILE__); }
-#   define MCCTRCx(str,n)  { MCCWRITE(MCCLISTF,mcctrcxfmt,4,str,n,__LINE__,__FILE__); }
-#   define MCCTRCs(str,s)  { MCCWRITE(MCCLISTF,mcctrcsfmt,4,str,s,__LINE__,__FILE__); }  
+#   define MCCTRC(str)          { MCCWRITE(MCCLISTF,mcctrcfmt,3,str,__LINE__,__FILE__); }
+#   define MCCTRCd(str,n)       { MCCWRITE(MCCLISTF,mcctrcdfmt,4,str,n,__LINE__,__FILE__); }
+#   define MCCTRCx(str,n)       { MCCWRITE(MCCLISTF,mcctrcxfmt,4,str,n,__LINE__,__FILE__); }
+#   define MCCTRCs(str,s)       { MCCWRITE(MCCLISTF,mcctrcsfmt,4,str,s,__LINE__,__FILE__); }  
 #else
 #   define MCCTRC(str)
 #   define MCCTRCd(str,n)
 #   define MCCTRCx(str,n)
 #   define MCCTRCs(str,s)
 #endif
-#define mccwriteTypesSSNS 1    // 2 strings, a number, and another string
-#define mccwriteTypesSSSS 2    // 4 args all strings
+#define mccwriteTypesS    1    // 1 string
+#define mccwriteTypesSS   2    // 2 strings
+#define mccwriteTypesSSNS 3    // 2 strings, a number, and another string
+#define mccwriteTypesSSSS 4    // 4 args all strings
 
 #include "mcchost.h"
 
@@ -754,15 +757,15 @@ extern sourcep mccopensrc (char *path, int bufsize, int searchtype );
 /* MCC global functions:                                             */
 /*-------------------------------------------------------------------*/
 boolean mccinit(int argc, char **argv);
-int mcccompile();
+boolean mcccompile();
 
 /*  from mccerror.c */
-void mccerr(int code, tokenp tok);
-void mccwarning(int code, tokenp tok);
-void mccwrite(FILE *fd,char *fmt, int n,...);
-void mccwriteType(FILE *fd,char *fmt, int typePattern, int n,...);
-void*  mccmalloc(int size, char *file, int line);
-void mccfree(ptr p, char *file, int line);
+void mccerr         (int code, tokenp tok);
+void mccwarning     (int code, tokenp tok);
+void mccwrite       (FILE *fd,char *fmt,                  int n,...);
+void mccwriteTypes  (FILE *fd,char *fmt, int typePattern, int n,...);
+void *mccmalloc     (int size, char *file, int line);
+void mccfree        (ptr p, char *file, int line);
 
 /*  from mccpp.c */
 tokenp mccpptok( int recursive ); /* 0 except when mccpptok calls itself */

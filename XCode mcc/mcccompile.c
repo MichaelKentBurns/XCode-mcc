@@ -63,7 +63,7 @@ static int myfputc(char c, FILE *stream)
 /* BRIDGED:  none                                                    */
 /* PURPOSE: compile from stdin, listing to stdout                    */
 /* USAGE:                                                            */
- int mcccompile ()
+ boolean mcccompile ()
 {
 /* RETURNS:                                                          */
 /*   true if succeeded in compiling something (ie no errors)         */

@@ -61,7 +61,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/tmp/mccterm.c"
+            argument = "/tmp/mcctermX.c"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
