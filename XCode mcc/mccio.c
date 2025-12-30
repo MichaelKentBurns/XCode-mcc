@@ -335,8 +335,8 @@
    {
    MCCWRITE(MCCLISTF,
 "          \\\n",0);
-   MCCWRITE(MCCLISTF,
-"           \\------------------- %s %s ----------------\n",2,
+   MCCWRITETYPES(MCCLISTF,
+"           \\------------------- %s %s ----------------\n",mccwriteTypesSS,2,
               (src == mccdefsrc) ? "end command line switches"  
                                  : "end file:",
               (src == mccdefsrc) ? ""  
@@ -367,7 +367,7 @@
                 {
                  if (src->pathname)
                    {
-                     MCCWRITE(MCCLISTF,mccerrmsg[MCCFILELIST],6,
+                     MCCWRITETYPES(MCCLISTF,mccerrmsg[MCCFILELIST],mccwriteTypesNSSN,6,
                        src->id,
                        src->incdepth * 2,
 /*2345678901234567890123456789012345678901234567890123456789012345678901234567890*/
@@ -461,9 +461,9 @@ if (src->lineno <= 1)
                src->pathname,(mccsrc->flags & MCCUSERH) ? 'u' : 's');
          else
           {
-      MCCWRITE(MCCLISTF,
-"           /----------------- %s %s ----------------\n",2,
-              (src == mccdefsrc) ? "begin command line switches"  
+      MCCWRITETYPES(MCCLISTF,
+"           /----------------- %s %s ----------------\n",mccwriteTypesSS,2,
+              (src == mccdefsrc) ? "begin command line switches"
                                  : "begin file:",
               (src == mccdefsrc) ? ""  
                                  :  src->pathname);

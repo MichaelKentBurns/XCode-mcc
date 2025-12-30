@@ -352,8 +352,13 @@ typedef struct LENT
 #endif
 #define mccwriteTypesS    1    // 1 string
 #define mccwriteTypesSS   2    // 2 strings
-#define mccwriteTypesSSNS 3    // 2 strings, a number, and another string
-#define mccwriteTypesSSSS 4    // 4 args all strings
+#define mccwriteTypesNN   3    // 2 numbers
+#define mccwriteTypesSSNS 4    // 2 strings, a number, and another string
+#define mccwriteTypesSSSS 5    // 4 args all strings
+#define mccwriteTypesNSSN 6    // 4 args: number, string, string, number
+#define mccwriteTypesSSNNNNFN 7    // 8 args: string, string, number, number, number, number, float, number
+
+
 
 #include "mcchost.h"
 

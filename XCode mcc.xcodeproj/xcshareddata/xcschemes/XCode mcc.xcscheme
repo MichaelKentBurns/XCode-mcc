@@ -57,11 +57,15 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "-tis"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "-lusx#p"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/tmp/mcctermX.c"
+            argument = "/tmp/ustr.c"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

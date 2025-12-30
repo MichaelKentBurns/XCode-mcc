@@ -142,8 +142,8 @@
             filePath = "XCode mcc/mccerror.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "mccwrite(fd, fmt, n)"
             landmarkType = "9">
          </BreakpointContent>
@@ -158,40 +158,10 @@
             filePath = "XCode mcc/mccerror.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "mccwriteTypes(fd, fmt, typePattern, n)"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "322CE7FF-12D2-4A9C-9DB9-4E8B1A947294 - ab36372271fe27e5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mccwriteTypes"
-                  moduleName = "XCode mcc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Xcode/XCode%20mcc/XCode%20mcc/mccerror.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104">
-               </Location>
-               <Location
-                  uuid = "322CE7FF-12D2-4A9C-9DB9-4E8B1A947294 - ab36372271fe27a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mccwriteTypes"
-                  moduleName = "XCode mcc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Xcode/XCode%20mcc/XCode%20mcc/mccerror.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -204,47 +174,17 @@
             filePath = "XCode mcc/mccerror.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "mccwriteTypes(fd, fmt, typePattern, n)"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "471CB75A-5FBE-494F-83EA-5F190222E4EC - ab36372271fe2970"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mccwriteTypes"
-                  moduleName = "XCode mcc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Xcode/XCode%20mcc/XCode%20mcc/mccerror.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93">
-               </Location>
-               <Location
-                  uuid = "471CB75A-5FBE-494F-83EA-5F190222E4EC - ab36372271fe26af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mccwriteTypes"
-                  moduleName = "XCode mcc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Xcode/XCode%20mcc/XCode%20mcc/mccerror.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9A1E2B3A-7E9F-4C70-BFC0-2E92F6B9C2B9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCode mcc/mcccompile.c"
@@ -292,7 +232,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "676124A2-A4E8-4EC1-AF6F-ADA415780C81"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCode mcc/mccmain.c"
@@ -324,14 +264,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A3F484BB-4FC4-494C-A02C-BF7402F48794"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCode mcc/mccerror.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "mccwriteTypes(fd, fmt, typePattern, n)"
             landmarkType = "9">
          </BreakpointContent>
@@ -340,14 +280,94 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "864C4435-8B9D-429B-A7C5-72E79DA68FB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XCode mcc/mccerror.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "mccwriteTypes(fd, fmt, typePattern, n)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40BAA760-3B1D-4B03-8041-36F308CA7072"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XCode mcc/mccerror.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "mccwrite(fd, fmt, n)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBF29AC3-661B-4123-A999-E9C2B8C8208A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XCode mcc/mccerror.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "mccwrite(fd, fmt, n)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E32C096-DEB2-4C5F-ABE2-1A438B614E33"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCode mcc/mccerror.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "mccwrite(fd, fmt, n)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "716F7F57-F925-4F0B-BC91-E92E70C1809E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XCode mcc/mccio.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBB9068C-3794-416D-ABF7-D137DF5D785A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XCode mcc/mccerror.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "mccwriteTypes(fd, fmt, typePattern, n)"
             landmarkType = "9">
          </BreakpointContent>

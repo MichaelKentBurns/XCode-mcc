@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4C7B1D202EF61E0500EC7AE2 /* XCode mcc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "XCode mcc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7B1D5B2F00923C00EC7AE2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +45,7 @@
 		4C7B1D172EF61E0500EC7AE2 = {
 			isa = PBXGroup;
 			children = (
+				4C7B1D5B2F00923C00EC7AE2 /* README.md */,
 				4C7B1D222EF61E0500EC7AE2 /* XCode mcc */,
 				4C7B1D212EF61E0500EC7AE2 /* Products */,
 			);

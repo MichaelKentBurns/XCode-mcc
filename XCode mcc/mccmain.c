@@ -430,17 +430,18 @@ if (cpuseconds > 0.0 && emitstats)
      fd = MCCERRF;
     else
      fd = MCCLISTF;
-   MCCWRITE(fd,
+   MCCWRITETYPES(fd,
 "\
 %s %s %d files, %d lines, %d tokens, %d bytes \n\
      in %.3f cpu-seconds (%ld wallclock).\n",
+        mccwriteTypesSSNNNNFN,
         8,
         argv[0],
         (mccoption[MCCOPTPPONLY]) ? "PREPROCESSED" : "COMPILED",
         mcctotfiles,mcctotlines,mccntokens,mcctotbytes,cpuseconds,wallseconds);
-   MCCWRITE(fd,"\
-     %d lines/cpu-second, %d bytes/cpu-second\n",2,
-        (int) (mcctotlines/cpuseconds),(int) (mcctotbytes/cpuseconds));
+   MCCWRITETYPES(fd,"\
+     %d lines/cpu-second, %d bytes/cpu-second\n",mccwriteTypesNN,2,
+        (long) (mcctotlines/cpuseconds),(long) (mcctotbytes/cpuseconds));
    if (mcctrcoption['a'])
      {
       int nfreesbefore;
